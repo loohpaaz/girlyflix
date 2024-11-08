@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt'br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GirlyFlix - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Catálogo</h1>
-       <p>Melhores filmes/series para garotas</p>
-    <h2>Means girl</h2>
-        <p>comédia/drama, 1h42m 16 anos
-    <h3>ginny e georgia
-        <p>drama, 2 temporadas 16 anos</p>
-    <h4>eu nunca</h4>
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>GirlyFlix</h1>
+        <p>Os Melhores para Girly</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://magazineshop.us/cdn/shop/files/240405_A1_NOUPC_1080x.jpg?v=1703874945" alt="Poster do Filme 1">
+                <h3>Meninas Malvadas</h3>
+                <p>Comédia, Drama</p>
+                <p>2004</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_824773-MLB73994455138_012024-O.webp" alt="Poster do Filme 2">
+                <h3>Monster High</h3>
+                <p>Fantasia, Comédia</p>
+                <p>2010</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://static.wikia.nocookie.net/outerbanks-netflix/images/1/1f/Outer_Banks_Couverture_%28Liste_de_Lecture%29.jpeg/revision/latest?cb=20210911000842&path-prefix=fr" alt="Poster do Série 1">
+                <h3>Outer Banks</h3>
+                <p>Ação, Mistério</p>
+                <p>2020</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cine&Séries. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
